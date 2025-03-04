@@ -1,3 +1,11 @@
-def find_Max_Num(digits):
-    max_number = [str(x) for x in sorted(digits, reverse=True)]
-    return int(''.join(max_number))
+def find_Max_Num(lst):
+    max_num = ''
+    max_num_str = ''
+    for i in sorted(lst, reverse=True):
+        max_num += str(i)
+    for i in range(len(max_num)):
+        max_num_str += max_num[i]
+        if i % 2 != 0:
+            max_num_str += max_num[len(max_num) - i - 1]
+    # max_num_str = str(max_num)[::-1]
+    return int(max_num_str)
