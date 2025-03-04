@@ -1,9 +1,7 @@
-def find_Max_Num(digits):
-    from itertools import permutations
-    digits = set(digits)
-    max_num = 0
-    for p in permutations(digits):
-        num = int(''.join(map(str, p)))
-        if num > max_num:
-            max_num = num
-    return max_num
+def find_Max_Num(lst):
+    max_num = ''
+    lst = sorted(lst, reverse=True)
+    for num in lst:
+        max_num += str(num)
+    
+    return int(max_num)
