@@ -16,4 +16,3 @@ sorts them in descending order,
 and then constructs a new string by alternating between the largest and second largest numbers. 
 The function then converts this string back into an integer and returns it.
 ###
-
