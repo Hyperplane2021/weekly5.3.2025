@@ -12,4 +12,3 @@ and returns the sum of the two digits that are not equal to each other.
 If no such pair of digits exists, 
 it returns the maximum digit in the number.
 ###
-
